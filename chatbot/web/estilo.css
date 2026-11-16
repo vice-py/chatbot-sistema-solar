@@ -1,0 +1,451 @@
+/* Chatbot Sistema Solar - Estilos */
+
+:root {
+    --bg: #0b0d17;
+    --panel: #131627;
+    --surface: #1a1e35;
+    --border: #252a45;
+    --text: #e0e4f0;
+    --text-muted: #8890b0;
+    --accent: #6c9fff;
+    --accent-glow: rgba(108, 159, 255, 0.15);
+    --user-bg: #1e3a6e;
+    --bot-bg: #1a1e35;
+    --error: #ff6b6b;
+    --radius: 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* === Sidebar === */
+
+aside {
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+}
+
+.sidebar-header h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+}
+
+.tagline {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.stat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.stat-num {
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.disclaimer {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-top: auto;
+}
+
+/* === Main === */
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+select {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.estado {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+}
+
+.estado.online {
+    background: rgba(80, 200, 120, 0.15);
+    color: #50c878;
+}
+
+.estado.offline {
+    background: rgba(255, 107, 107, 0.15);
+    color: var(--error);
+}
+
+#btn-nueva {
+    background: var(--surface);
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#btn-nueva:hover {
+    color: var(--text);
+    border-color: var(--accent);
+}
+
+/* === Mensajes === */
+
+#mensajes {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+}
+
+.bienvenida p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.sugerencias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.sugerencia {
+    background: var(--surface);
+    color: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.sugerencia:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+}
+
+.mensaje {
+    display: flex;
+    gap: 0.75rem;
+    max-width: 85%;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mensaje.usuario {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+
+.mensaje .avatar {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--surface);
+    border-radius: 50%;
+}
+
+.mensaje .contenido {
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--radius);
+    line-height: 1.6;
+    font-size: 0.92rem;
+    word-break: break-word;
+}
+
+.mensaje.bot .contenido,
+.mensaje.bot.cargando .contenido,
+.mensaje.bot.error .contenido {
+    background: var(--bot-bg);
+    border: 1px solid var(--border);
+}
+
+.mensaje.usuario .contenido {
+    background: var(--user-bg);
+    border: 1px solid rgba(108, 159, 255, 0.3);
+    color: #d0e0ff;
+}
+
+.mensaje.bot.error .contenido {
+    border-color: rgba(255, 107, 107, 0.3);
+    color: var(--error);
+}
+
+.mensaje.bot.cargando .contenido {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.contenido strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.contenido table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+}
+
+.contenido td {
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--border);
+}
+
+.contenido tr:first-child td {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* Detalles/Meta */
+.meta {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.meta summary {
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+}
+
+.meta summary:hover {
+    color: var(--accent);
+}
+
+.meta pre {
+    background: var(--bg);
+    padding: 0.5rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    overflow-x: auto;
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+/* === Formulario === */
+
+#form-chat {
+    display: flex;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border);
+    background: var(--panel);
+}
+
+#pregunta {
+    flex: 1;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+#pregunta::placeholder {
+    color: var(--text-muted);
+}
+
+#pregunta:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+#btn-enviar {
+    background: var(--accent);
+    color: #0b0d17;
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#btn-enviar:hover {
+    filter: brightness(1.15);
+}
+
+#btn-enviar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    padding: 0.5rem;
+}
+
+/* === Responsive === */
+
+@media (max-width: 900px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    aside {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+    .sidebar-header h1 {
+        font-size: 1.2rem;
+    }
+    .tagline, .disclaimer {
+        display: none;
+    }
+    .stats {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+    }
+    .stat {
+        padding: 0.5rem;
+    }
+    .stat-num {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #form-chat {
+        padding: 0.75rem;
+    }
+    .mensaje {
+        max-width: 95%;
+    }
+    .sugerencia {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+/* Scrollbar */
+#mensajes::-webkit-scrollbar {
+    width: 6px;
+}
+#mensajes::-webkit-scrollbar-track {
+    background: transparent;
+}
+#mensajes::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+#mensajes::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Sistema Solar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/estilo.css">
+</head>
+<body>
+    <aside>
+        <div class="sidebar-header">
+            <h1>Sistema Solar</h1>
+            <p class="subtitle">Fundamentos de IA - Grupo 8</p>
+        </div>
+        <p class="tagline">Explora el universo pregunta a pregunta</p>
+        <div class="stats">
+            <div class="stat"><span class="stat-num">8</span> planetas</div>
+            <div class="stat"><span class="stat-num">1</span> planeta enano</div>
+            <div class="stat"><span class="stat-num">21</span> lunas notables</div>
+            <div class="stat"><span class="stat-num">27</span> misiones</div>
+        </div>
+        <p class="disclaimer">Los datos provienen de una base de conocimiento en Prolog con informacion verificada del Sistema Solar.</p>
+    </aside>
+
+    <main>
+        <header>
+            <div class="controls">
+                <label for="modo" class="sr">Motor de consulta</label>
+                <select id="modo">
+                    <option value="prolog">Prolog</option>
+                    <option value="llm">LLM (Gemini)</option>
+                </select>
+                <span id="estado" class="estado"></span>
+            </div>
+            <button id="btn-nueva" type="button">Nueva conversacion</button>
+        </header>
+
+        <section id="mensajes" aria-live="polite">
+            <div class="bienvenida">
+                <p>Hola! Soy el chatbot del Sistema Solar. Preguntame sobre planetas, lunas, misiones espaciales, temperaturas y mas.</p>
+                <div class="sugerencias">
+                    <button class="sugerencia" type="button">Que tipo de planeta es Jupiter?</button>
+                    <button class="sugerencia" type="button">Cuantas lunas tiene Saturno?</button>
+                    <button class="sugerencia" type="button">Que misiones se han enviado a Marte?</button>
+                    <button class="sugerencia" type="button">Cuales son los planetas rocosos?</button>
+                </div>
+            </div>
+        </section>
+
+        <form id="form-chat" autocomplete="off">
+            <label for="pregunta" class="sr">Tu pregunta</label>
+            <input id="pregunta" type="text" placeholder="Escribe tu pregunta sobre el Sistema Solar..." maxlength="600" required>
+            <button type="submit" id="btn-enviar">Enviar</button>
+        </form>
+        <footer>Chatbot Sistema Solar &mdash; Entrega 2, Fundamentos de IA</footer>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>

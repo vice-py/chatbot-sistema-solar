@@ -1,0 +1,22 @@
+[
+    {"id": 1,  "pregunta": "Que tipo de planeta es Jupiter?", "plan_esperado": {"operacion": "tipo", "planeta": "jupiter"}},
+    {"id": 2,  "pregunta": "Cuantas lunas tiene Saturno?", "plan_esperado": {"operacion": "lunas", "planeta": "saturno"}},
+    {"id": 3,  "pregunta": "Cuales son los planetas rocosos?", "plan_esperado": {"operacion": "planetas_tipo", "tipo": "rocoso"}},
+    {"id": 4,  "pregunta": "Cual es la temperatura media de Venus?", "plan_esperado": {"operacion": "temperatura", "planeta": "venus"}},
+    {"id": 5,  "pregunta": "Que misiones se han enviado a Marte?", "plan_esperado": {"operacion": "misiones", "planeta": "marte"}},
+    {"id": 6,  "pregunta": "A que distancia esta la Tierra del Sol?", "plan_esperado": {"operacion": "distancia", "planeta": "tierra"}},
+    {"id": 7,  "pregunta": "Cuales son los planetas con anillos?", "plan_esperado": {"operacion": "anillos"}},
+    {"id": 8,  "pregunta": "Cual es el planeta mas grande del sistema solar?", "plan_esperado": {"operacion": "mayor"}},
+    {"id": 9,  "pregunta": "Quien descubrio Urano?", "plan_esperado": {"operacion": "descubrimiento", "planeta": "urano"}},
+    {"id": 10, "pregunta": "Cual es la composicion atmosferica de Marte?", "plan_esperado": {"operacion": "atmosfera", "planeta": "marte"}},
+    {"id": 11, "pregunta": "Cuales son los planetas exteriores?", "plan_esperado": {"operacion": "planetas_exteriores"}},
+    {"id": 12, "pregunta": "Que caracteristicas especiales tiene Saturno?", "plan_esperado": {"operacion": "caracteristicas", "planeta": "saturno"}},
+    {"id": 13, "pregunta": "Cuales son los vecinos de la Tierra?", "plan_esperado": {"operacion": "vecinos", "planeta": "tierra"}},
+    {"id": 14, "pregunta": "Cual es el planeta mas frio?", "plan_esperado": {"operacion": "mas_frio"}},
+    {"id": 15, "pregunta": "Comparar Marte y Jupiter", "plan_esperado": {"operacion": "comparar", "planeta1": "marte", "planeta2": "jupiter"}},
+    {"id": 16, "pregunta": "Cuantas lunas tiene Pluton?", "plan_esperado": {"operacion": "lunas", "planeta": "pluton"}},
+    {"id": 17, "pregunta": "Cuales son los planetas gaseosos?", "plan_esperado": {"operacion": "planetas_tipo", "tipo": "gaseoso"}},
+    {"id": 18, "pregunta": "Cual es el planeta mas caliente del sistema solar?", "plan_esperado": {"operacion": "mas_caliente"}},
+    {"id": 19, "pregunta": "Cuentame sobre Neptuno", "plan_esperado": {"operacion": "info", "planeta": "neptuno"}},
+    {"id": 20, "pregunta": "Cuales son los datos generales del sistema solar?", "plan_esperado": {"operacion": "sistema"}}
+]
