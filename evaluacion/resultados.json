@@ -1,0 +1,392 @@
+[
+  {
+    "id": 1,
+    "pregunta": "Que tipo de planeta es Jupiter?",
+    "prolog": {
+      "respuesta": "Jupiter es un planeta de tipo **gaseoso**.",
+      "plan": {
+        "operacion": "tipo",
+        "planeta": "jupiter"
+      },
+      "tiempo_ms": 157
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te cuento sobre Júpiter. Según la información disponible, Júpiter es un planeta de tipo gaseoso. \n\nA diferencia de la Tierra, que tiene una superficie rocosa en la que podemos caminar, Júpiter está compuesto principalmente de gas, lo que lo convierte en un gigante fascinante dentro de nuestro Sistema Solar.",
+      "plan": {
+        "operacion": "tipo",
+        "planeta": "jupiter"
+      },
+      "tiempo_ms": 3728
+    }
+  },
+  {
+    "id": 2,
+    "pregunta": "Cuantas lunas tiene Saturno?",
+    "prolog": {
+      "respuesta": "Saturno tiene **146** luna(s) conocida(s).\n  - **titan**: Segunda luna mas grande, unica luna con atmosfera densa, tiene lagos de metano\n  - **encelado**: Geiseres de agua en su polo sur, posible oceano subterraneo\n  - **mimas**: Conocida como la Estrella de la Muerte por su gran crater Herschel\n  - rea\n  - dione",
+      "plan": {
+        "operacion": "lunas",
+        "planeta": "saturno"
+      },
+      "tiempo_ms": 255
+    },
+    "llm": {
+      "respuesta": "¡Hola! Saturno es un planeta fascinante en nuestro Sistema Solar y cuenta con un total de 146 lunas. Entre este impresionante número de satélites naturales, hay algunos que destacan muchísimo por sus características únicas.\n\nPor ejemplo, Titán es la segunda luna más grande y tiene la particularidad de ser la única luna con una atmósfera densa, además de contar con lagos de metano. También tenemos a Encélado, que llama la atención por sus géiseres de agua en el polo sur y la posibilidad de albergar un océano subterráneo. Otra luna muy curiosa es Mimas, a la que a menudo se le conoce como la \"Estrella de la Muerte\" debido a su gigantesco cráter Herschel. Por último, la base de datos también registra a Rea y Dione entre sus lunas más notables. \n\n¡Es un sistema fascinante lleno de mundos muy diversos!",
+      "plan": {
+        "operacion": "lunas",
+        "planeta": "saturno"
+      },
+      "tiempo_ms": 3828
+    }
+  },
+  {
+    "id": 3,
+    "pregunta": "Cuales son los planetas rocosos?",
+    "prolog": {
+      "respuesta": "Planetas: **Mercurio, Venus, Tierra, Marte**.",
+      "plan": {
+        "operacion": "planetas_tipo",
+        "tipo": "rocoso"
+      },
+      "tiempo_ms": 165
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te respondo. Los planetas que pertenecen al grupo de los rocosos en nuestro Sistema Solar son Mercurio, Venus, la Tierra y Marte. Estos cuatro mundos comparten esa misma característica de ser rocosos según nuestra base de conocimiento. ¡Espero que esta información te sea muy útil!",
+      "plan": {
+        "operacion": "planetas_tipo",
+        "tipo": "rocoso"
+      },
+      "tiempo_ms": 3518
+    }
+  },
+  {
+    "id": 4,
+    "pregunta": "Cual es la temperatura media de Venus?",
+    "prolog": {
+      "respuesta": "La temperatura media de Venus es **464 °C**.",
+      "plan": {
+        "operacion": "temperatura",
+        "planeta": "venus"
+      },
+      "tiempo_ms": 328
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te comparto ese dato sobre nuestro vecino planetario. La temperatura media de Venus es de 464 grados Celsius. Es un calor impresionante, lo que lo convierte en el planeta más caliente de todo el Sistema Solar. ¡Espero que esta información te sea muy útil para seguir explorando los misterios del espacio!",
+      "plan": {
+        "operacion": "temperatura",
+        "planeta": "venus"
+      },
+      "tiempo_ms": 3759
+    }
+  },
+  {
+    "id": 5,
+    "pregunta": "Que misiones se han enviado a Marte?",
+    "prolog": {
+      "respuesta": "Misiones espaciales a Marte:\n  - **mariner_4** (1964, NASA)\n  - **viking_1** (1975, NASA)\n  - **viking_2** (1975, NASA)\n  - **spirit** (2003, NASA)\n  - **opportunity** (2003, NASA)\n  - **curiosity** (2011, NASA)\n  - **perseverance** (2020, NASA)\n  - **insight** (2018, NASA)",
+      "plan": {
+        "operacion": "misiones",
+        "planeta": "marte"
+      },
+      "tiempo_ms": 268
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con gusto te cuento sobre las misiones que la NASA ha enviado a nuestro vecino rojo, Marte, a lo largo de los años. La exploración comenzó hace tiempo, en 1964, con la misión Mariner 4. Años más tarde, en 1975, se enviaron las famosas Viking 1 y Viking 2 para conocer más sobre la superficie marciana. \n\nLa exploración continuó avanzando de manera fascinante con la llegada de los rovers y aterrizadores. Por ejemplo, en el año 2003 se lanzaron Spirit y Opportunity, seguidos en 2011 por el conocido Curiosity. Más recientemente, la NASA ha seguido investigando este planeta con el sismómetro de la misión InSight en 2018 y, más recientemente aún, con el rover Perseverance en el año 2020. Todas estas misiones han sido fundamentales para comprender mejor los misterios de Marte.",
+      "plan": {
+        "operacion": "misiones",
+        "planeta": "marte"
+      },
+      "tiempo_ms": 3977
+    }
+  },
+  {
+    "id": 6,
+    "pregunta": "A que distancia esta la Tierra del Sol?",
+    "prolog": {
+      "respuesta": "Tierra esta a **1.0 UA** del Sol (149,597,871 km).",
+      "plan": {
+        "operacion": "distancia",
+        "planeta": "tierra"
+      },
+      "tiempo_ms": 353
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con gusto te comparto esa información. La Tierra se encuentra a una distancia promedio de 149,597,870.7 kilómetros del Sol. Para que te hagas una idea de la escala en el espacio, esta misma distancia equivale exactamente a 1 Unidad Astronómica (UA), que es la medida que los astrónomos utilizan precisamente para calcular las distancias dentro de nuestro sistema solar.",
+      "plan": {
+        "operacion": "distancia",
+        "planeta": "tierra"
+      },
+      "tiempo_ms": 3272
+    }
+  },
+  {
+    "id": 7,
+    "pregunta": "Cuales son los planetas con anillos?",
+    "prolog": {
+      "respuesta": "Los planetas con anillos son: **Jupiter, Saturno, Urano, Neptuno**.",
+      "plan": {
+        "operacion": "anillos"
+      },
+      "tiempo_ms": 150
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te comparto esa información sobre nuestro vecindario cósmico. \n\nCuando pensamos en anillos planetarios, el primero que se nos viene a la mente es Saturno por lo grandioso que es, pero la verdad es que todos los gigantes gaseosos y helados de nuestro Sistema Solar comparten esta característica. Así es, los planetas que tienen anillos son Júpiter, Saturno, Urano y Neptuno. \n\nCada uno de estos cuatro mundos cuenta con su propio sistema de anillos orbitando a su alrededor, enriqueciendo la gran diversidad que existe en nuestro sistema planetario.",
+      "plan": {
+        "operacion": "anillos"
+      },
+      "tiempo_ms": 3835
+    }
+  },
+  {
+    "id": 8,
+    "pregunta": "Cual es el planeta mas grande del sistema solar?",
+    "prolog": {
+      "respuesta": "El planeta mas grande es **Jupiter** con un radio de 69911 km.",
+      "plan": {
+        "operacion": "mayor"
+      },
+      "tiempo_ms": 153
+    },
+    "llm": {
+      "respuesta": "¡Hola! El planeta más grande de nuestro sistema solar es Júpiter. Para que te hagas una idea de su enorme tamaño, tiene un radio de 69,911 kilómetros. Es un mundo fascinante y realmente gigante en comparación con el resto de los planetas.",
+      "plan": {
+        "operacion": "mayor"
+      },
+      "tiempo_ms": 3217
+    }
+  },
+  {
+    "id": 9,
+    "pregunta": "Quien descubrio Urano?",
+    "prolog": {
+      "respuesta": "Urano fue descubierto por **William Herschel** en el ano **1781**.",
+      "plan": {
+        "operacion": "descubrimiento",
+        "planeta": "urano"
+      },
+      "tiempo_ms": 145
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con gusto te comparto ese dato fascinante sobre nuestro vecindario cósmico. Urano fue descubierto en el año 1781 por el astrónomo William Herschel. Fue un hallazgo increíble que amplió los límites conocidos de nuestro Sistema Solar en esa época.",
+      "plan": {
+        "operacion": "descubrimiento",
+        "planeta": "urano"
+      },
+      "tiempo_ms": 3563
+    }
+  },
+  {
+    "id": 10,
+    "pregunta": "Cual es la composicion atmosferica de Marte?",
+    "prolog": {
+      "respuesta": "La atmosfera de Marte esta compuesta por: **dioxido de carbono, nitrogeno, argon**.",
+      "plan": {
+        "operacion": "atmosfera",
+        "planeta": "marte"
+      },
+      "tiempo_ms": 287
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te cuento sobre la atmósfera de Marte. \n\nMarte sí tiene atmósfera, y su composición está formada principalmente por dióxido de carbono, además de contener nitrógeno y argón. Es una atmósfera muy interesante aunque bastante diferente a la de nuestro planeta. \n\nEspero que esta información te sea muy útil para conocer un poco más sobre nuestro vecino en el Sistema Solar. ¡Pregúntame lo que necesites!",
+      "plan": {
+        "operacion": "atmosfera",
+        "planeta": "marte"
+      },
+      "tiempo_ms": 3772
+    }
+  },
+  {
+    "id": 11,
+    "pregunta": "Cuales son los planetas exteriores?",
+    "prolog": {
+      "respuesta": "Planetas exteriores: **Jupiter, Saturno, Urano, Neptuno**.",
+      "plan": {
+        "operacion": "planetas_exteriores"
+      },
+      "tiempo_ms": 319
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te cuento sobre los planetas exteriores de nuestro Sistema Solar. \n\nLos planetas exteriores son Júpiter, Saturno, Urano y Neptuno. Estos gigantes forman la parte más alejada de nuestro vecindario cósmico, situándose más allá de los planetas interiores y ofreciéndonos una vista fascinante de los confines de nuestro sistema.",
+      "plan": {
+        "operacion": "planetas_exteriores"
+      },
+      "tiempo_ms": 3974
+    }
+  },
+  {
+    "id": 12,
+    "pregunta": "Que caracteristicas especiales tiene Saturno?",
+    "prolog": {
+      "respuesta": "Caracteristicas especiales de Saturno:\n  - Famoso por sus espectaculares anillos de hielo y roca\n  - Planeta menos denso del sistema solar, flotaria en agua\n  - Tiene mas lunas conocidas que cualquier otro planeta (146)",
+      "plan": {
+        "operacion": "caracteristicas",
+        "planeta": "saturno"
+      },
+      "tiempo_ms": 180
+    },
+    "llm": {
+      "respuesta": "¡Hola! ¡Qué gran pregunta! Saturno es un planeta fascinante y tiene características verdaderamente únicas en nuestro Sistema Solar. \n\nPara empezar, es mundialmente famoso por sus espectaculares anillos, los cuales están compuestos principalmente de hielo y roca. Además, es el planeta menos denso de todo el Sistema Solar; de hecho, ¡es tan ligero que si encontraras una bañera lo suficientemente grande, flotaría en el agua! \n\nPor si fuera poco, Saturno es el rey de las lunas, ya que tiene más lunas conocidas que cualquier otro planeta, ¡un total de 146! \n\n¿Te gustaría saber más sobre este impresionante gigante gaseoso?",
+      "plan": {
+        "operacion": "caracteristicas",
+        "planeta": "saturno"
+      },
+      "tiempo_ms": 3775
+    }
+  },
+  {
+    "id": 13,
+    "pregunta": "Cuales son los vecinos de la Tierra?",
+    "prolog": {
+      "respuesta": "Los vecinos orbitales de Tierra son: **Venus, Marte**.",
+      "plan": {
+        "operacion": "vecinos",
+        "planeta": "tierra"
+      },
+      "tiempo_ms": 335
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te cuento sobre los vecinos de nuestro planeta. \n\nSi miramos quiénes viven más cerca de nosotros en el Sistema Solar, los vecinos directos de la Tierra son Venus y Marte. Estos dos planetas son nuestros compañeros más cercanos en este gran viaje alrededor del Sol.",
+      "plan": {
+        "operacion": "vecinos",
+        "planeta": "tierra"
+      },
+      "tiempo_ms": 4323
+    }
+  },
+  {
+    "id": 14,
+    "pregunta": "Cual es el planeta mas frio?",
+    "prolog": {
+      "respuesta": "El planeta mas frio es **Neptuno** con -200 °C.",
+      "plan": {
+        "operacion": "mas_frio"
+      },
+      "tiempo_ms": 315
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con gusto te comparto esa información sobre nuestro Sistema Solar. El planeta más frío de todos es Neptuno. Para que te des una idea de lo extremo que es, registra una temperatura helada de -200 grados Celsius. ¡Es un lugar realmente congelado!",
+      "plan": {
+        "operacion": "mas_frio"
+      },
+      "tiempo_ms": 3576
+    }
+  },
+  {
+    "id": 15,
+    "pregunta": "Comparar Marte y Jupiter",
+    "prolog": {
+      "respuesta": "**Comparacion entre Jupiter y Marte:**\n| | Jupiter | Marte |\n|---|---|---|\n| Radio (km) | 69911 | 3390 |\n| Masa (M.T.) | 317.8 | 0.107 |\n| Dist. Sol (UA) | 5.2 | 1.52 |\n| Temperatura (°C) | -110 | -62 |\n| Lunas | 95 | 2 |",
+      "plan": {
+        "operacion": "comparar",
+        "planeta1": "jupiter",
+        "planeta2": "marte"
+      },
+      "tiempo_ms": 396
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con gusto te comparto una comparación muy interesante entre Marte y Júpiter basada en los datos que tenemos. \n\nPara empezar hablemos de su ubicación y tamaño. Marte se encuentra a una distancia de 1.52 unidades astronómicas del Sol, mientras que Júpiter está mucho más lejos, a 5.2 unidades astronómicas. En cuanto a su tamaño, Júpiter es un verdadero gigante comparado con Marte; tiene un radio de 69,911 kilómetros, lo que supera por mucho los 3,390 kilómetros de radio que tiene Marte. Esta diferencia de tamaño también se nota en su masa, ya que Júpiter tiene una masa de 317.8 unidades, mientras que la masa de Marte es de apenas 0.107.\n\nSi miramos el tema de sus lunas y temperaturas, también hay contrastes muy marcados. Marte cuenta con 2 lunas y una temperatura promedio de -62 grados centígrados. Por otro lado, Júpiter es un planeta con muchísima compañía, ya que posee 95 lunas, y su temperatura es aún más fría, registrando -110 grados centígrados. \n\nComo puedes ver, son dos mundos totalmente opuestos en nuestro Sistema Solar. ¡Espero que esta información te sea muy útil!",
+      "plan": {
+        "operacion": "comparar",
+        "planeta1": "marte",
+        "planeta2": "jupiter"
+      },
+      "tiempo_ms": 3746
+    }
+  },
+  {
+    "id": 16,
+    "pregunta": "Cuantas lunas tiene Pluton?",
+    "prolog": {
+      "respuesta": "Pluton tiene **5** luna(s) conocida(s).\n  - **caronte**: Luna mas grande de Pluton, forma un sistema binario con el\n  - nix\n  - hidra",
+      "plan": {
+        "operacion": "lunas",
+        "planeta": "pluton"
+      },
+      "tiempo_ms": 168
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con gusto te comparto la información sobre las lunas de Plutón. Este fascinante cuerpo celeste cuenta con un total de 5 lunas en su sistema. \n\nEntre ellas destaca Caronte, que es la luna más grande de Plutón y tiene la particularidad de formar un sistema binario con él. Además de Caronte, la base de datos registra la presencia de otras lunas llamadas Nix e Hidra.",
+      "plan": {
+        "operacion": "lunas",
+        "planeta": "pluton"
+      },
+      "tiempo_ms": 3422
+    }
+  },
+  {
+    "id": 17,
+    "pregunta": "Cuales son los planetas gaseosos?",
+    "prolog": {
+      "respuesta": "Planetas: **Jupiter, Saturno**.",
+      "plan": {
+        "operacion": "planetas_tipo",
+        "tipo": "gaseoso"
+      },
+      "tiempo_ms": 298
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te comparto la información sobre los planetas gaseosos de nuestro Sistema Solar. Según nuestros datos, los planetas que pertenecen a este tipo son Júpiter y Saturno. Son cuerpos celestes fascinantes que destacan por su composición gaseosa en comparación con los planetas rocosos. ¡Espero que esta información te sea muy útil!",
+      "plan": {
+        "operacion": "planetas_tipo",
+        "tipo": "gaseoso"
+      },
+      "tiempo_ms": 3585
+    }
+  },
+  {
+    "id": 18,
+    "pregunta": "Cual es el planeta mas caliente del sistema solar?",
+    "prolog": {
+      "respuesta": "El planeta mas caliente es **Venus** con 464 °C.",
+      "plan": {
+        "operacion": "mas_caliente"
+      },
+      "tiempo_ms": 431
+    },
+    "llm": {
+      "respuesta": "¡Hola! El planeta más caliente de nuestro sistema solar es Venus. Su temperatura alcanza unos impresionantes 464 grados Celsius. Es realmente fascinante y a la vez extremo, ¡imagínate lo caliente que es! Si tienes más dudas sobre el sistema solar, aquí estaré para ayudarte.",
+      "plan": {
+        "operacion": "mas_caliente"
+      },
+      "tiempo_ms": 4374
+    }
+  },
+  {
+    "id": 19,
+    "pregunta": "Cuentame sobre Neptuno",
+    "prolog": {
+      "respuesta": "**Neptuno**\n- Tipo: helado\n- Posicion orbital: 8\n- Distancia al Sol: 30.05 UA\n- Radio: 24622 km\n- Masa: 17.1 masas terrestres\n- Temperatura media: -200 °C\n- Gravedad: 11.15 m/s²\n- Lunas conocidas: 16\n- Periodo orbital: 60190.0 dias\n- Lunas notables: triton, nereida\n- Atmosfera: hidrogeno, helio, metano\n\nCaracteristicas especiales:\n  - Tiene los vientos mas fuertes del sistema solar (hasta 2100 km/h)\n  - Planeta mas distante del Sol\n  - Su existencia fue predicha matematicamente antes de ser observado",
+      "plan": {
+        "operacion": "info",
+        "planeta": "neptuno"
+      },
+      "tiempo_ms": 202
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con mucho gusto te cuento sobre Neptuno. Este fascinante mundo es el planeta más distante del Sol, ubicado a una distancia de 30.05 unidades astronómicas. Debido a esto, su viaje alrededor del Sol es larguísimo, tomando unos 60,190 días terrestres en completar una órbita. \n\nNeptuno es un planeta de tipo helado y ocupa la octava posición en nuestro sistema solar. Es un gigante si lo comparamos con nuestro hogar, ya que su masa es 17.1 veces la de la Tierra, y tiene un radio de 24,622 kilómetros. Además, experimentar la gravedad allí sería un poco más pesado que aquí, con una fuerza de 11.15 metros por segundo al cuadrado. Prepárate para el frío, porque su temperatura es de unos gélidos -200 grados Celsius.\n\nSu atmósfera está compuesta principalmente por hidrógeno, helio y metano, y es el escenario de los vientos más fuertes de todo el sistema solar, alcanzando velocidades impresionantes de hasta 2,100 kilómetros por hora. Un dato muy curioso es que la existencia de este planeta fue predicha matemáticamente antes de que alguien pudiera observarlo directamente en el cielo. \n\nFinalmente, Neptuno está acompañado por un total de 16 lunas, entre las cuales destacan especialmente Tritón y Nereida. ¿Te gustaría saber más sobre alguno de estos aspectos?",
+      "plan": {
+        "operacion": "info",
+        "planeta": "neptuno"
+      },
+      "tiempo_ms": 11564
+    }
+  },
+  {
+    "id": 20,
+    "pregunta": "Cuales son los datos generales del sistema solar?",
+    "prolog": {
+      "respuesta": "**Datos del Sistema Solar:**\n  - Edad: 4600 millones de anios\n  - Estrella: Sol (tipo G2V, enana amarilla)\n  - Ubicacion: Via Lactea, brazo de Orion\n  - Numero planetas: 8\n  - Numero planetas enanos: 5\n  - Planetas enanos: Pluton, Eris, Haumea, Makemake, Ceres\n  - Cinturon asteroides: Entre Marte y Jupiter\n  - Cinturon kuiper: Mas alla de Neptuno\n  - Nube oort: Limite exterior del sistema solar",
+      "plan": {
+        "operacion": "sistema"
+      },
+      "tiempo_ms": 260
+    },
+    "llm": {
+      "respuesta": "¡Hola! Con gusto te comparto los datos generales de nuestro vecindario cósmico. \n\nNuestro Sistema Solar tiene una edad aproximada de 4600 millones de años y está ubicado en la galaxia Vía Láctea, específicamente en el brazo de Orión. El centro y motor de este sistema es el Sol, que es una estrella de tipo G2V, también conocida como una enana amarilla. \n\nAl hablar",
+      "plan": {
+        "operacion": "sistema"
+      },
+      "tiempo_ms": 6589
+    }
+  }
+]
